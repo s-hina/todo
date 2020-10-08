@@ -12,10 +12,11 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    {{-- Laravel標準で用意されているCSSの読み込み --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     @yield('styles')
+    <link rel="stylesheet" href="/css/styles.css">
+    {{-- Laravel標準で用意されているCSSの読み込み --}}
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    {{-- <link href="{{ asset('css/styles.css') }}" rel="stylesheet"> --}}
 </head>
 <body>
     <header>
